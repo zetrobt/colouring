@@ -1,4 +1,4 @@
-## colouring
+# colouring
 Simple ANSI colored terminal text in C++.
 ## Danger
 Windows is not supporting now! Please wait for updates.
@@ -8,7 +8,7 @@ If you working in Unix, just use it firstly:
 #include "colouring.h"
 using namespace colouring;
 ```
-# List of Colors
+### List of Colors
 ```c++
 enum Colors
 {
@@ -24,7 +24,7 @@ enum Colors
 };
 ```
 If color is not passed then it will be *DEFAULT*.
-# Colored Output
+### Colored Output
 You can change color of text or background by relevant functions:
 ```c++
 foreground(color);
@@ -34,7 +34,7 @@ or by generated ANSI-string:
 ```c++
 std::cout << toAnsi(color, isBackground=false);
 ```
-# Clearing
+### Clearing
 With **colouring** you can clear line or screen in your console:
 ```c++
 clearScreen(mode=2);
